@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2K5X70M5BR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2K5X70M5BR');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farebuddies || Travelocity</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="travelocity/fonts/CentraNo2/centra No2.woff2" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="travelocity/css/popup.css">
+    <link rel="stylesheet" href="travelocity/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="travelocity/js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-main">
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="travelocity/images/logo.png" alt="farebuddies logo" />
+                        </a>
+                    </div>
+                    <div class="nav-bar">
+                        <ul>
+                            <li><a href="travelocity.html">Home</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                            <li><a href="Contact.html">Contact us</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="call-btn">
+                        <a href="tel:+1-888-671-2923">
+                            <span class="btn-call">
+                                <i class="fa-solid fa-phone"></i>
+                                +1 (888) 671-2923
+                            </span>
+                        </a>
+                    </div>
+                    <div class="toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+
+            <div class="container">
+                <div id="box">
+                    <div class="sec_tab">
+                        <ul>
+                            <li><a href="javscript:void(0)">Stays</a></li>
+                            <li><a href="javscript:void(0)" class="active">Flights</a></li>
+                            <li><a href="javscript:void(0)">Cars</a></li>
+                            <li><a href="javscript:void(0)">Packages</a></li>
+                            <li><a href="javscript:void(0)">Things to do</a></li>
+                            <li><a href="javscript:void(0)">Cruises</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div id="p1">
+
+
+                        <div class="tabs">
+                            <div class="tab active" id="rndtrp">Return</div>
+                            <div class="tab" id="onway">One way</div>
+                        </div>
+                        <div class="economy">
+                            <p class="cabin_Class" data-FInalCabin="">Economy</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul class="eco-dropdown">
+                                <li><button type="button" role="menuitemradio" data-Cabinvalue="Y"
+                                        class="ddl_Cabins">Economy</button></li>
+                                <li><button type="button" role="menuitemradio" data-Cabinvalue="C"
+                                        class="ddl_Cabins">Business</button></li>
+                                <li><button type="button" role="menuitemradio" data-Cabinvalue="F"
+                                        class="ddl_Cabins">First Class</button></li>
+                                <li><button type="button" role="menuitemradio" data-Cabinvalue="W"
+                                        class="ddl_Cabins">Premium Economy</button></li>
+                            </ul>
+
+                            <input type="hidden" id="hdn_CabinData" value="Y" />
+                        </div>
+                        <div class="content">
+                            <form class="frm1">
+                                <input type="hidden" value="EXP" id="txt_HDNAirline">
+                                <div class="tab-content active" id="content1">
+                                    <div id="box1">
+
+                                        <fieldset class="dest-main">
+                                            <div class="logo1">
+                                                <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
+                                                <input type="text" placeholder="Leaving from" class="input-out"
+                                                    id="txtFlyFrom" name="txtFlyFrom" />
+                                                <div class="swap searchDirection">
+                                                    <img class="updown" src="travelocity/images/swap.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="logo1">
+                                                <p class="logo-out"><i class="fa-solid fa-location-dot"></i></p>
+                                                <input type="text" placeholder="Going to" class="input-out"
+                                                    id="txtFlyTo" name="txtFlyTo" />
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="trvl-info">
+
+                                            <div class="logo1">
+                                                <p class="logo-out1"><i class="fa-solid fa-calendar-day"></i></p>
+                                                <input type="text" placeholder="Travel Date" class="input-out3"
+                                                    id="txt_Date" name="txt_Date">
+                                                <input type="hidden" id="hdv_departdate" />
+                                                <input type="hidden" id="hdv_ENDdate" />
+                                            </div>
+
+
+
+
+                                            <div class="logo1 pax-info">
+                                                <p class="logo-out"><i class="fa-solid fa-user"></i></p>
+                                                <button class="traveler" type="button"
+                                                    id="passengerCountField">Traveler</button>
+
+                                                <ul class="travel-dropdown" id="travelerCount">
+                                                    <li>
+                                                        <div class="travel-categ">
+                                                            <p>Adult</p>
+                                                        </div>
+                                                        <div class="value-add">
+                                                            <button class="minus" type="button"
+                                                                onclick="decrementPassengerCount('adults')">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <!--<input type="text" disabled value="1" id="df">-->
+                                                            <span id="adultsCount"
+                                                                style="width: 45px; text-align: center;">1</span>
+
+                                                            <button class="plus" type="button"
+                                                                onclick="incrementPassengerCount('adults')">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+
+                                                    <li>
+                                                        <div class="travel-categ">
+                                                            <p>Child</p>
+                                                        </div>
+                                                        <div class="value-add">
+                                                            <button class="minus" type="button"
+                                                                onclick="decrementPassengerCount('children')">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <!--<input type="text" disabled value="0" id="childrenCount">-->
+                                                            <span id="childrenCount"
+                                                                style="width: 45px; text-align: center;">0</span>
+                                                            <button class="plus" type="button"
+                                                                onclick="incrementPassengerCount('children')">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="travel-categ">
+                                                            <p>Infant</p>
+                                                        </div>
+                                                        <div class="value-add">
+                                                            <button class="minus" type="button"
+                                                                onclick="decrementPassengerCount('infants')">
+                                                                <i class="fa-solid fa-minus"></i>
+                                                            </button>
+                                                            <!--<input type="text" disabled value="0" id="infantsCount">-->
+                                                            <span id="infantsCount"
+                                                                style="width: 45px; text-align: center;">0</span>
+                                                            <button class="plus" type="button"
+                                                                onclick="incrementPassengerCount('infants')">
+                                                                <i class="fa-solid fa-plus"></i>
+                                                            </button>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="">
+                                                        <button type="button" class="searchbtn"
+                                                            onclick="submitPassengerCount()">Done</button>
+
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                        </fieldset>
+                                        <button class="searchbtn" id="btn_Submit">Search</button>
+
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section style=" ">
+            <div class="container">
+                <div class="fav-stays">
+                    <div class="title">
+                        <h2>Discover your new favorite stay</h2>
+                    </div>
+                    <div class="stays-box-main">
+                        <div class="staybox-container">
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/resorts.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Resorts</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/houseboat.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>houseboats</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/apartments.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>apartments</p>
+                                </div>
+                            </a>
+
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/pet-friendly.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Pet Friendly</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/cottage.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Cottage</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/family-friendly.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Family Friendly</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/spa.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Spa</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/sea-view.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Sea View</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/apart-hotel.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Apart Hotels</p>
+                                </div>
+                            </a>
+
+                            <a class="stay-box" href="#">
+                                <img src="travelocity/images/hot-tubs.jpg" alt="">
+                                <div class="box-txt">
+                                    <p>Hot Tubs</p>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style=" ">
+            <div class="container">
+                <div class="fav-stays">
+                    <div class="title">
+                        <h2>Explore stays in popular destinations</h2>
+                    </div>
+                    <div class="stays-box-main slider-2">
+                        <div class="staybox-container ">
+                            <div class="stay-box">
+                                <a href="javascript:void(0)">
+                                    <div class="box-image">
+                                        <img src="travelocity/images/ballena.jpg" alt="">
+                                    </div>
+                                    <div class="box-txt ">
+                                        <p>Ballena</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stay-box">
+                                <a href="javascript:void(0)">
+                                    <div class="box-image">
+                                        <img src="travelocity/images/bankok.webp" alt="">
+                                    </div>
+                                    <div class="box-txt ">
+                                        <p>Bangkok</p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="stay-box">
+                                <a href="javascript:void(0)">
+                                    <div class="box-image">
+                                        <img src="travelocity/images/Ban-Ta-Khun.jpg" alt="Ban Ta Khun">
+                                    </div>
+                                    <div class="box-txt ">
+                                        <p>Ban Ta Khun</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stay-box">
+                                <a href="javascript:void(0)">
+                                    <div class="box-image">
+                                        <img src="travelocity/images/Kanthi.jpg" alt="">
+                                    </div>
+                                    <div class="box-txt ">
+                                        <p>Kanthi</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stay-box">
+                                <a href="javascript:void(0)">
+                                    <div class="box-image">
+                                        <img src="travelocity/images/Cancun.webp" alt="">
+                                    </div>
+                                    <div class="box-txt ">
+                                        <p>Cancun</p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="">
+            <div class="container">
+                <div id="box2">
+                    <img id="first_img"
+                        src="https://a.travel-assets.com/travel-assets-manager/ux-887/Global-HP-Hero-928x398.jpg"
+                        alt="img">
+                    <div class="heading">
+                        <h2>Save Instantly with <br> Faresbuddies Rewards</h2>
+                        <p id="par">
+                            you can enjoy access to perks like Member Prices,<br>saving you 10% or more on
+                            select hotels. Terms<br>mat apply.
+                        </p>
+                        <button id="member" onclick="window.location.href='tel:+1-888-671-2923'">See Member
+                            Prices</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="offer-section">
+                <div class="container">
+                    <div class="offer-main">
+                        <div class="offer-box">
+                            <div class="offer-box-image">
+                                <img src="travelocity/images/offer1.jpg">
+                            </div>
+                            <div class="offer-txt">
+                                <h3>All-inclusive resorts</h3>
+                                <p>Think of nothing beyond having a great time with your family</p>
+                                <a href="tel:+1-888-671-2923">Call Now</a>
+                            </div>
+                        </div>
+
+                        <div class="offer-box">
+                            <div class="offer-box-image">
+                                <img src="travelocity/images/last-gateway.jpg">
+                            </div>
+                            <div class="offer-txt">
+                                <h3>Last minute getaways</h3>
+                                <p>Celebrate the moment with an unexpected getaway</p>
+                                <a href="tel:+1-888-671-2923">Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="trip_planner-section">
+                <div class="container">
+                    <div class="title">
+                        <h2>Start planning your next trip</h2>
+                    </div>
+                    <div class="planner-main">
+                        <div class="trip-box">
+                            <a href="tel:+1-888-671-2923">
+                                <div class="trip-image">
+                                    <img src="travelocity/images/sunny-beach.jpg">
+                                </div>
+                                <div class="trip-content">
+                                    <h3>Sunny beach hotel offers</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="trip-box">
+                            <a href="tel:+1-888-671-2923">
+                                <div class="trip-image">
+                                    <img src="travelocity/images/car_rental.jpg">
+                                </div>
+                                <div class="trip-content">
+                                    <h3>Car rental deals</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="trip-box">
+                            <a href="tel:+1-888-671-2923">
+                                <div class="trip-image">
+                                    <img src="travelocity/images/member-discount.jpg">
+                                </div>
+                                <div class="trip-content">
+                                    <h3>Member discounts</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="trip-box">
+                            <a href="tel:+1-888-671-2923">
+                                <div class="trip-image">
+                                    <img src="travelocity/images/vacation-rental.jpg">
+                                </div>
+                                <div class="trip-content">
+                                    <h3>Vacation rental offers</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="display: none;">
+            <div class="faq-main">
+                <div class="container">
+                    <div class="heading">
+                        <h1 style="text-transform: none !important;">
+                            <span>How to Call travelocity Customer Service</span>
+                        </h1>
+                    </div>
+                    <div class="">
+                        <p>
+                            Calling travelocity customer service is straightforward. Dial
+                            <strong>1-888-671-2923</strong>
+                            for
+                            assistance. Once connected, you’ll
+                            navigate through an automated menu to find the department you need, such as flights or
+                            hotels.
+                            Have
+                            your booking
+                            details handy for quicker service. Additionally, you can use the travelocity app or website
+                            for
+                            various
+                            support options,
+                            including live chat, which can also help resolve common inquiries.
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        How To Speak To A
+                        Live
+                        Person At travelocity
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Speaking to a live person at travelocity can be easily accomplished by calling
+                            <strong>1-888-671-2923</strong>. After the automated greeting,
+                            say “representative” or “customer service” to be connected to an agent. Having your
+                            confirmation
+                            number ready can expedite
+                            the process. Alternatively, the travelocity app or website offers a live chat feature,
+                            allowing
+                            you
+                            to
+                            interact with a
+                            representative in real time for immediate assistance.
+                        </p>
+                    </div>
+
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Does travelocity Offer
+                        24-Hour
+                        Customer Service?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            travelocity does offer 24-hour customer service, ensuring travelers can get help whenever
+                            needed.
+                            You
+                            can contact them anytime
+                            at <strong>1-888-671-2923</strong> for support with bookings, cancellations, or changes.
+                            This
+                            round-the-clock service is particularly
+                            useful for those traveling across different time zones or facing unexpected issues. For
+                            urgent
+                            matters, reaching out
+                            directly guarantees a timely response from their dedicated support team.
+                        </p>
+                    </div>
+
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        How Do I Ask a
+                        Question
+                        on
+                        travelocity?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Questions can be easily asked on travelocity through their website or app. Navigate to the
+                            "Help" or
+                            "Contact Us" section
+                            to find frequently asked questions or initiate a live chat with a customer service
+                            representative.
+                            If you prefer,
+                            calling their support line at <strong>1-888-671-2923</strong> is another option. Be sure to
+                            have
+                            relevant booking details on hand to
+                            facilitate a more efficient response from the agent.
+
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        What Are travelocity
+                        Customer
+                        Service Hours?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            travelocity’s customer service operates 24/7, allowing you to seek assistance at any time.
+                            You
+                            can
+                            reach
+                            them by dialing
+                            <strong>1-888-671-2923</strong> for help with travel-related inquiries, including booking
+                            changes,
+                            cancellations, or general questions.
+                            This around-the-clock availability is beneficial for travelers who may encounter issues
+                            outside
+                            of
+                            regular business
+                            hours, ensuring support is always just a call away when you need it.
+
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Do You Get a Refund
+                        if
+                        You
+                        Cancel on travelocity?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Whether you receive a refund after canceling on travelocity depends on the specific terms of
+                            your
+                            booking. Many hotels and
+                            flights offer free cancellations up to a certain date, while others may have strict policies
+                            that
+                            incur fees or offer
+                            no refund. Always check the cancellation policy during booking and in your confirmation
+                            email.
+                            For
+                            any questions
+                            regarding your specific reservation, you can contact travelocity customer service at
+                            <strong>1-888-671-2923</strong>.
+
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Is There a
+                        Cancellation
+                        Fee
+                        for travelocity?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Cancellation fees on travelocity can vary based on the provider and type of booking. Some
+                            hotels
+                            and
+                            airlines may charge
+                            a fee for cancellations, while others offer flexible options without penalties. When
+                            booking,
+                            it's
+                            important to review
+                            the cancellation policy provided, as this will outline any potential fees. If you need
+                            clarification
+                            or assistance,
+                            reaching out to travelocity customer service at <strong>1-888-671-2923</strong> can help you
+                            understand
+                            the terms related to your specific
+                            booking.
+
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Does travelocity Give a
+                        Full
+                        Refund for 24-Hour Cancellation?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            travelocity generally provides a full refund for cancellations made within 24 hours of
+                            booking,
+                            but
+                            this
+                            can vary by
+                            airline or hotel policies. Many travel providers adhere to this guideline, allowing
+                            customers to
+                            change their minds
+                            without penalty. Always confirm the specific terms during your booking process. For
+                            assistance
+                            or to
+                            check your
+                            booking's eligibility, contact travelocity customer service at
+                            <strong>1-888-671-2923</strong>
+                            for
+                            detailed information.
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        How Do I Get a
+                        Refund
+                        from
+                        travelocity?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Getting a refund from travelocity involves a few steps. First, cancel your booking according
+                            to
+                            the
+                            cancellation policy.
+                            Then, check your email for confirmation of the cancellation. Refunds may take several
+                            business
+                            days
+                            to process,
+                            depending on the payment method. If you encounter issues or need assistance, you can contact
+                            travelocity
+                            customer service
+                            at <strong>1-888-671-2923</strong> for guidance on the refund process related to your
+                            specific
+                            reservation.
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Do You Get a Refund
+                        if
+                        You
+                        Cancel on travelocity?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Receiving a refund after canceling on travelocity depends on the booking's specific terms
+                            and
+                            conditions.
+                            Some reservations are fully refundable, while others may incur cancellation fees or offer no
+                            refund
+                            at all.
+                            Always review the cancellation policy at the time of booking and in your confirmation email
+                            for
+                            clarity.
+                            For inquiries regarding your specific cancellation or refund eligibility, you can reach
+                            travelocity
+                            customer service at
+                            <strong>1-888-671-2923</strong> for personalized
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Are travelocity Trips
+                        Fully
+                        Refundable?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            travelocity trips are not always fully refundable; it depends on the specific terms
+                            associated
+                            with
+                            each
+                            booking.
+                            Some hotels, flights, and vacation packages offer flexible cancellation policies, while
+                            others
+                            may
+                            have strict rules
+                            that incur fees or provide no refunds. It's crucial to review the cancellation policy at the
+                            time of
+                            booking and in
+                            your confirmation email. For specific questions regarding your trip's refundability, contact
+                            travelocity
+                            customer service
+                            at <strong>1-888-671-2923</strong> for assistance.
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        How Do I Get a
+                        Refund
+                        from
+                        travelocity?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Getting a refund from travelocity starts with canceling your booking according to the
+                            cancellation
+                            policy.
+                            Once canceled, check for an email confirmation of the cancellation, which may outline your
+                            refund
+                            status.
+                            Refunds can take several business days to process, depending on the payment method used. If
+                            you
+                            need
+                            help or encounter
+                            issues, reach out to travelocity customer service at <strong>1-888-671-2923</strong> for
+                            guidance on
+                            your specific situation and any
+                            refund inquiries.
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        What Is travelocity
+                        24-Hour
+                        Cancellation Rule?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            travelocity generally follows a 24-hour cancellation rule, allowing customers to cancel
+                            their
+                            bookings
+                            within 24 hours
+                            for a full refund. This applies primarily to certain flights and hotels, but it’s important
+                            to
+                            check
+                            the specific
+                            provider's policies. If you book a trip and change your mind, ensure you cancel within this
+                            timeframe to avoid
+                            penalties. For detailed information about your booking’s eligibility, contact travelocity
+                            customer
+                            service
+                            at <strong>1-888-671-2923</strong>.
+                        </p>
+                    </div>
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Does travelocity Allow
+                        Name
+                        Change?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            travelocity typically does not allow name changes on flights and hotel bookings. Most
+                            airlines
+                            and
+                            hotels have strict
+                            policies regarding name changes, often requiring a new booking instead. If you have
+                            misspelled a
+                            name or need to update
+                            it, contact the airline or hotel directly to inquire about options. For additional guidance,
+                            reach
+                            out to travelocity
+                            customer service at <strong>1-888-671-2923</strong> for assistance related to your specific
+                            booking.
+
+                        </p>
+                    </div>
+
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        How Do I Edit
+                        Traveler
+                        Info
+                        on travelocity?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Editing traveler information on travelocity can be done by accessing your booking through
+                            the
+                            website or
+                            app.
+                            Log in to your account, locate your reservation, and look for options to edit traveler
+                            details.
+                            Depending
+                            on the type of booking, some changes may not be permitted, especially for flights. If you
+                            encounter
+                            issues or have
+                            specific questions, you can contact travelocity customer service at
+                            <strong>1-888-671-2923</strong>
+                            for
+                            further assistance.
+                        </p>
+                    </div>
+
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Can I Change My
+                        travelocity
+                        Flight?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            Changing a flight booked through travelocity is possible, but it depends on the airline's
+                            policies.
+                            Log
+                            in to your account
+                            and navigate to your reservation to check available options for changes. Keep in mind that
+                            fees
+                            may
+                            apply, and
+                            fare differences can affect the total cost. If you need help or clarification regarding your
+                            flight
+                            change,
+                            contact travelocity customer service at <strong>1-888-671-2923</strong> for personalized
+                            assistance.
+
+                        </p>
+                    </div>
+
+                    <button class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
+                        Does travelocity Charge
+                        to
+                        Cancel a Flight?
+                    </button>
+                    <div class="accordion_panel">
+                        <p>
+                            travelocity may charge a fee to cancel a flight, depending on the airline's cancellation
+                            policy
+                            and
+                            the
+                            fare type purchased. Some tickets are non-refundable or may incur a cancellation fee, while
+                            others
+                            allow
+                            free cancellations within a specified timeframe. It’s important to review the terms and
+                            conditions
+                            when
+                            booking. For specific inquiries about your cancellation options and fees, contact
+                            travelocity
+                            customer
+                            service
+                            at <strong>1-888-671-2923</strong> for assistance.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="footer-sec">
+            <div class="container">
+                <div id="box5">
+                    <!-- <div>
+                    <p style="text-align: center; font-size: 13px;">Explore a world of travel with Faresbuddies</p>
+                    <p style="text-align: center;color: rgb(53, 53, 198); font-size: 13px;">Discover new places and
+                        experiences</p>
+                </div> -->
+                    <div id="sub_box">
+                        <div class="ft-call-btn">
+                            <a href="#">
+                                <img id="six_img" src="travelocity/images/farebuddies-logo-black.png" alt="img" />
+                            </a>
+
+                        </div>
+
+                        <div class="lower">
+                            <p><a href="PrivacyPolicy.html" class="anc">Privacy Policy</a></p>
+                        </div>
+                        <div class="lower">
+                            <p><a href="RefundPolicy.html" class="anc">Refund Policy</a></p>
+                        </div>
+                        <div class="lower">
+                            <p><a href="TermsCondition.html" class="anc">Terms & Condition</a></p>
+                        </div>
+                    </div>
+
+                    <div class="lower">
+                        <div class="call-us-btn">
+                            <p>Call us 24X7</p>
+                            <a class="call-ft" href="tel:+1-888-671-2923">
+                                <i class="fa-solid fa-phone"></i> +1 (888) 671-2923
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <p style="font-size: 12px; text-align: center; margin-top: 18px;">Copyright ©
+                        <script>document.write(new Date().getFullYear())</script> FaresBuddies. All
+                        Rights Reserved
+                    </p>
+                    <!-- <hr style="width: 95%;"> -->
+                </div>
+            </div>
+        </section>
+        <div id="box6">
+
+        </div>
+        <div id="resultLoading"
+            style="display: none; width: 100%; height: 100%; position: fixed; z-index: 10000; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto;">
+            <div
+                style="width: 340px; height: 200px; text-align: center; position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; z-index: 10; color: rgb(255, 255, 255);">
+                <div class="uil-default-css">
+                    <img src="images/loader.gif"
+                        style="max-width: 150px; max-height: 150px; display: block; margin-left: auto; margin-right: auto;" />
+                </div>
+                <div class="loader-text" style="display: block; font-size: 18px; font-weight: 300;">&nbsp;</div>
+            </div>
+            <div
+                style="background: rgb(0, 0, 0); opacity: 0.6; width: 100%; height: 100%; position: absolute; top: 0px;">
+            </div>
+        </div>
+
+    </main>
+    <!--<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <link href="travelocity/css/jquery-ui.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <script src="travelocity/js/custom.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.staybox-container ').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 1024, // large tablets and small laptops
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768, // tablets
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480, // phones
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+
+
+        $('.slider-2>.staybox-container').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            speed: 1500,
+            infinite: true,
+            centerMode: true,
+            pauseOnHover: false,
+
+            responsive: [
+                {
+                    breakpoint: 1024, // large tablets and small laptops
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768, // tablets
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480, // phones
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+    </script>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67179cdb4304e3196ad598d0/1iaq3pf3j';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
